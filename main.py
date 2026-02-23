@@ -16,6 +16,10 @@ def main():
     df = clean_pipeline(df)
 
     df = feature_pipeline(df)
+    
+    #debug
+    print("Max return:", df['Return'].max())
+    print("Min return:", df['Return'].min())
 
     validate_pipeline(df)
 

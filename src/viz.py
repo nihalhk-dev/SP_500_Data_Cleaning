@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 
 
 def plot_price(df, date_col='Date', price_col='Price'):
-    plt.figure(figsize=(10, 4))
-    plt.plot(df[date_col], df[price_col], marker='o', markersize=2)
-    plt.title("Price over Time")
+    plt.figure(figsize=(12, 5))
+    plt.plot(df[date_col], df[price_col])
+    plt.title("S&P 500 Price Over Time")
     plt.xlabel("Date")
     plt.ylabel("Price")
     plt.xticks(rotation=45)
